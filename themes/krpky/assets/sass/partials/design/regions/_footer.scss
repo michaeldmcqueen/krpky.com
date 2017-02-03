@@ -1,5 +1,12 @@
 footer {
   @include clearfix;
   background: $footer-bg;
-  padding: 5em 0;
+  padding: 1.5em 0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  .copy {
+    color: $color-two;
+    margin: 0;
+  }
 }

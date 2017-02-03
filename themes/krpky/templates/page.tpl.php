@@ -60,11 +60,10 @@
       <?php endif; ?>
   </main>
 
-  <footer>
-    <?php if ($page['footer']): ?>
+  <footer class="site-footer">
       <div class="wrap">
         <?php print render($page['footer']); ?>
+        <p class="copy">&copy; COPYRIGHT <?php echo date("Y"); ?> KENTUCKY RIVER PROPERTIES. ALL RIGHTS RESERVED</p>
       </div>
-    <?php endif; ?>
   </footer>
 </div>
