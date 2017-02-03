@@ -1,0 +1,38 @@
+.gallery-list {
+  @include clearfix;
+  .gallery-list--item {
+     position: relative;
+     margin: 1em 0;
+     @include breakpoint($tablet, $no-query: '.no-mq') {
+       width: 50%;
+       float: left;
+     }
+
+     &.views-row-odd {
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        padding-right: .75em;
+      }
+     }
+     &.views-row-even {
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        padding-left: .75em;
+      }
+     }
+  }
+  .gallery-list--title {
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    margin: 0;
+    padding: .45em .9em;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    text-align: center;
+     a {
+      text-decoration: none;
+      color: #fff;
+     }
+  }
+}

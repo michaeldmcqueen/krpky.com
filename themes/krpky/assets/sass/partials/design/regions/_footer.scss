@@ -1,0 +1,5 @@
+footer {
+  @include clearfix;
+  background: $footer-bg;
+  padding: 5em 0;
+}
