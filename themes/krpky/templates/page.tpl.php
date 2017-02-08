@@ -24,11 +24,9 @@
   </header>
 
   <!-- Close Preface -->
-  <?php if ($page['preface']): ?>
-    <div class="preface cleafix">
-        <?php print render($page['preface']); ?>
-      </div>
-  <?php endif; ?>
+  <div class="preface cleafix <?php if(empty ($page['preface']) ): ?>preface-empty<?php endif; ?>">
+    <?php print render($page['preface']); ?>
+  </div>
 
   <!-- Main -->
   <main id="content" class="<?php if(empty ($page['preface']) ): ?>no-preface<?php endif; ?> ">
@@ -44,7 +42,9 @@
       <?php endif; ?>
       
       <?php if ($page['content']): ?>
+        <div class="content-area">
           <?php print render($page['content']); ?>
+        </div>
       <?php endif; ?>
 
       <?php if ($page['sidebar_second']): ?>

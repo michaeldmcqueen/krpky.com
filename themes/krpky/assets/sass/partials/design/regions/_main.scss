@@ -2,3 +2,11 @@ main {
   @include clearfix;
   padding: 2em 0 3em;
 }
+
+.sidebar-second {
+  .content-area {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(8.5,1);
+    }
+  }
+}

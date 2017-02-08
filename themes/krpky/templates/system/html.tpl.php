@@ -46,6 +46,19 @@
     <title><?php print $head_title; ?></title>
     <?php print $styles; ?>
     <?php print $scripts; ?>
+    <style> 
+.wf-loading * {
+ 
+    /*
+    first things first, we need to hide everything,
+    but bear in mind that this will only take effect
+    once the loading script has taken effect.
+    here we're hiding all content within
+    the <html> once it has the class "wf-loading"
+    */
+    opacity: 0;
+}
+</style>
     <script src="https://use.typekit.net/dow3sfb.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script src="https://use.fontawesome.com/da4814fc21.js"></script>

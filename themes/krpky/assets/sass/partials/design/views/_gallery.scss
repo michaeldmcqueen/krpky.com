@@ -7,7 +7,16 @@
        width: 50%;
        float: left;
      }
-
+     &:hover {
+      img {
+        opacity: 0.8;
+        transition: all linear .25s;
+      }
+      .gallery-list--title {
+        transition: all linear .25s;
+        padding: .95em .9em;
+      }
+     }
      &.views-row-odd {
       @include breakpoint($tablet, $no-query: '.no-mq') {
         padding-right: .75em;
@@ -18,8 +27,16 @@
         padding-left: .75em;
       }
      }
+     .node-gallery {
+      background: #000;
+     }
+     img {
+      opacity: 1;
+      transition: all linear .25s;
+     }
   }
   .gallery-list--title {
+    transition: all linear .25s;
     position: absolute;
     bottom: 0;
     background: #000;

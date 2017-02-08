@@ -1,12 +1,18 @@
 // Site Header
 header.site-header {
   @include clearfix;
-  position: relative;
   z-index: 2;
   background-color: #fff;
   background-color: rgba(255,255,255,0.85);
   padding: 1em 0;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  @include breakpoint($desktop, $no-query: '.no-mq') {
+    padding: 0;
+  }
+}
+.no-preface {
+  position: relative !important;
 }
 
 // Logo
@@ -14,15 +20,16 @@ header.site-header {
   width: 140px;
   display: inline-block;
   vertical-align: middle;
-  @include breakpoint($tablet, $no-query: '.no-mq') {
+  @include breakpoint($desktop, $no-query: '.no-mq') {
     //width: 200px;
+    padding-top: 1em;
   }
 }
 
 // Main Nav - rest of style in block/main-navigation.scss
 .main-nav {
   display: none;
-  @include breakpoint($tablet, $no-query: '.no-mq') {
+  @include breakpoint($desktop, $no-query: '.no-mq') {
     display: inline-block;
     vertical-align: middle;
     float: right;

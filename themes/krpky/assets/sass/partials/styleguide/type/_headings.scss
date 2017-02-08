@@ -40,3 +40,16 @@ h6 {
   margin-bottom: 20px;
   font-weight: 700;
 }
+
+.page-title {
+  text-transform: uppercase;
+    font-size: 3em;
+    color: #000;
+}
+#page-title {
+      color: #fff;
+    text-transform: uppercase;
+    font-size: 3em;
+    padding-top: 2em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}

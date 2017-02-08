@@ -1,0 +1,5 @@
+aside.sidebar-second {
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    @include grid-span(3,10);
+  }
+}
