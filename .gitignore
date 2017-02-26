@@ -3,3 +3,5 @@ Gemfile.lock
 /vendor
 .bundle
 node_modules
+libraries
+modules

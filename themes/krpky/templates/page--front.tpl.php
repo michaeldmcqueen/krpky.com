@@ -54,7 +54,9 @@
   </main>
     <?php if ($page['postscript']): ?>
       <div class="postscript">
-        <?php print render($page['postscript']); ?>
+        <div class="wrap">
+          <?php print render($page['postscript']); ?>
+        </div>
       </div>
     <?php endif; ?>
 
