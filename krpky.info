@@ -22,6 +22,7 @@ regions[footer] = 'Footer'
 ; ========================================
 
 stylesheets[all][0] = 'assets/css/style.css'
+stylesheets[all][0] = 'assets/css/overrides.css'
 stylesheets[print][0] = 'assets/css/print.css'
 
 ; ========================================
