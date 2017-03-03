@@ -1,5 +1,5 @@
 .preface {
-  min-height: 350px;
+  min-height: 300px;
   // position: static !important;
   width: 100%;
   z-index: 1 !important; 
@@ -12,6 +12,7 @@
     margin: 0 auto;
     @include breakpoint($tablet, $no-query: '.no-mq') {
       //max-width: 50%;
+      min-height: 350px;
     }
   }
 }
