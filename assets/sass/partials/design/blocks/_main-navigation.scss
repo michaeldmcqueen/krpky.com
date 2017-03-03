@@ -173,6 +173,9 @@ $bar-spacing: 10px;
     left: 0;
     background: #525252;
   }
+  .mm-listview>li>a, .mm-listview>li>span {
+    color: #fff !important;
+  }
 }
 .mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview {
   margin-top: -10px;
