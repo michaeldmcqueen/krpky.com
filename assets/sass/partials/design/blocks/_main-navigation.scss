@@ -78,6 +78,9 @@ nav.main-nav {
       padding: 0;
       font-size: 14px;
       border-bottom: 0;
+      a.active {
+        color: #fff;
+      }
     }
     @include breakpoint($desktop, $no-query: '.no-mq') {
       display: inline-block;
@@ -85,9 +88,12 @@ nav.main-nav {
   }
   a, a:visited, span {
     text-decoration: none;
-    color: $color-two;
+    color: #282828;
     &:hover {
       color: #868687;
+    }
+    &.active-trail, &.active {
+      color: $color-two;
     }
   }
 }

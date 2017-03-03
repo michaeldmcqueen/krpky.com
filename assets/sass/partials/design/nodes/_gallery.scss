@@ -1,0 +1,17 @@
+.node-gallery.view-mode-full {
+  .gallery {
+    .colorbox {
+    width: 20%;
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: 8px;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+        width: 15%;
+      }
+      &:first-child {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+}

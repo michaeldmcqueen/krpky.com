@@ -1,12 +1,24 @@
 footer {
   @include clearfix;
-  background: $footer-bg;
-  padding: 1.5em 0;
+    background: $footer-bg url('../images/footer.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 1.5em 0 3em;
   text-align: center;
   font-size: 13px;
   font-weight: 700;
   .copy {
     color: $color-two;
     margin: 0;
+  }
+  .footer-info {
+    text-align: center;
+    div {
+      display: inline-block;
+      color: #fff;
+      padding: 1em;
+    }
   }
 }

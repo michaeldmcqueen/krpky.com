@@ -1,0 +1,15 @@
+.node-locations.node-teaser {
+  margin-bottom: 2em;
+  .section-one {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+        float: left;
+            width: 40%;
+    padding-right: 2em;
+      }
+  }
+   .section-two {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+        overflow:hidden;
+      }
+  }
+}

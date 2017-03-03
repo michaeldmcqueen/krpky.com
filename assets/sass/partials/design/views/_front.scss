@@ -13,7 +13,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height:800px;
+  min-height:770px;
   @include breakpoint($tablet, $no-query: '.no-mq') {
     padding-top: 3em;
   }
@@ -47,27 +47,31 @@
   .postscript {
     background: #f7f7f7;
     padding: 4em 0em;
-    & > h2 {
+    h2 {
       text-align: center;
       font-size: 50px;
+      text-transform: uppercase;
     }
     .view-display-id-block_1 {
       @include clearfix;
       .views-row {
-        margin: 1em 0;
+        margin: 1em 0 2em;
+        max-width: 400px;
         @include breakpoint($tablet, $no-query: '.no-mq') {
           padding: 1em;
           display: inline-block;
           width: 33%;
+          vertical-align: top;
         }
         .home-block-image {
           position: relative;
           img {
             line-height: 0;
+            width: 100%;
           }
           a {
             display: block;
-            line-height: 0;
+            line-height: 0;            
           }
           h4 {
             text-decoration: none;
@@ -86,6 +90,10 @@
         }
         .home-block-content {
           padding-top: 2em;
+          a {
+            color: $color-two;
+            font-weight: 700;
+          }
         }
       }
     }

@@ -1,0 +1,19 @@
+.node-webform.view-mode-full {
+  @include clearfix;
+  .section-one {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      float: left;
+      width: 30%;
+      padding-right: 2em;
+    }
+  }
+  .section-two {
+    background: #fff;
+    padding: 2em;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 1px 0px 25px rgba(0,0,0,0.2);
+    overflow:hidden;
+  }
+
+}

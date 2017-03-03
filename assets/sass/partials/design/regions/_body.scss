@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: $site-bg;
+  overflow-x: hidden;
 }
 .wrap {
   max-width: $container_width;
