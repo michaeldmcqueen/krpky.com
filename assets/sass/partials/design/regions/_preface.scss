@@ -12,7 +12,7 @@
     margin: 0 auto;
     @include breakpoint($tablet, $no-query: '.no-mq') {
       //max-width: 50%;
-      min-height: 350px;
+      //min-height: 350px;
     }
   }
 }
